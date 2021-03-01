@@ -3,6 +3,8 @@ This is the team Hacker_Bolte. We tried our best to create a website which can p
 
 ->INSTRUCTION TO USE:
 Framework used in our project is Flask. If you are running the files on your system so be sure to install flask.
+Move all the '.html' files in 'templates' folder in same directory.
+Move all the '.jpeg' images in 'static' folder in same directory.
 
 ->Functions:
 It will provide us latest announcement related to covids around world.
