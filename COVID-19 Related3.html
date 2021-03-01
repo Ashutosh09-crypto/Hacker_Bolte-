@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="Physician Login">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<body style="background-color:#A0FF93">
+<h1><center><b>
+  COVID-19 Related
+</b></center></h1>
+
+
+<h2 style="color:red;"><b><u>
+  What should you do if you think you have symptoms of COVID-19?
+</u></b></h2>
+<br>
+<p style="font-size:18;line-height: 1.6;">
+<p style="font-size:20;color:blue">If you think that you have symptoms of COVID-19, here what’s to do:<br><br></p>
+
+<img src="{{url_for('static', filename='COVID3.jpeg')}}" style="width:400px;height:400px;" align="right">
+
+<ul style="font-size:18;line-height: 1.6;">
+  <li><b>Monitor your symptoms.</b> Not everyone with COVID-19 requires hospitalization. However, keeping track of your symptoms is important since they may worsen in the second week of illness.</li><br><br>
+  <li><b>Stay isolated.</b> Plan to isolate yourself at home until your infection has cleared. Try to stay separated from other people in your home. Use a separate bedroom and bathroom if possible.</li><br><br>
+  <li><b>Seek care.</b> If your symptoms worsen, seek prompt medical care. Be sure to call ahead before you arrive at a clinic or hospital. Wear a face mask, if available.</li><br><br>
+  <li><b>Get tested.</b> Your doctor can work with local health authorities and the CDC to evaluate your symptoms and risk for exposure to determine whether you need to be tested for COVID-19.</li><br><br>
+</ul>
+</p>
+
+
+
+
+<p style="color:red;text-align:left;font-size:30;"><a href="/related2">Symptoms</a></p>
+
+
+<p style="color:red;text-align:right;font-size:30;"><a href="/related4">Procedures to follow for COVID-19 positive patients</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</body>
+</html>

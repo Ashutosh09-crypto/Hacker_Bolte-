@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+hr {
+    color: #FE441C;
+}
+
+
+</style>
+</head>
+<body style="background-color:#A0FF93">
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="/Physicianlogin">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<center><h1 style="font-size:40">COVID-19</h1><hr>
+
+<p style="color:blue;font-size:20"><b>
+COVID-19 is a disease caused by a new strain of coronavirus. ‘CO’ stands for corona, ‘VI’ for virus, and ‘D’ for disease. Formerly, this disease was referred to as ‘2019 novel coronavirus’ or ‘2019-nCoV.’ The COVID-19 virus is a new virus linked to the same family of viruses as Severe Acute Respiratory Syndrome (SARS) and some types of common cold.
+</b></p></center>
+<hr>
+
+<img src="{{url_for('static', filename='COVID4.jpeg')}}" style="width:400px;height:400px;" align="right">
+
+
+<div style="height:500px;width:1000px;overflow:auto;" >
+<h1><center>Latest Announcements</center></h1>
+<marquee behavior="scroll" direction="up" scrollamount=3>
+<ul style="font-size:25;line-height: 1.6;">
+<li>COVID-19 vax: Registration on Co-Win 2.0 portal to start today.</li>
+<li>MHA says existing COVID-19 guidelines to continue till March 31</li>
+<li>Maharashtra reports 8,293 new COVID-19 cases, 62 die</li>
+<li>No Covid-19 related deaths in 20 states, UTs in last 24 hours: Government</li>
+<li>Maharashtra COVID-19 surge: Curfew in Hingoli from March 1 to 7</li>
+</ul>
+</marquee>
+</div>
+
+
+
+
+
+</body>
+</html>

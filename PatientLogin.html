@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+
+<body style="background-color:#A0FF93">
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="Physician login">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<h1><center>PATIENT LOGIN</center></h1>
+
+<ol>
+<li>
+<form action="/validate" method="POST">
+  <label for="fname"><b>First name: </b></label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname"><b>Last name: </b></label>
+  <input type="text" id="lname" name="lname"><br><br>
+</li>
+
+<li>
+  <label for="birthday"><b>Date of Birth: </b></label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+</li>
+
+<li>
+  <b>Gender: </b><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+</li>
+
+<li>
+  <label for="phone"><b>Enter your phone number: </b></label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+</li>
+
+<li>
+  <label for="email"><b>Enter your email:</b></label>
+  <input type="email" id="email" name="email"><br><br>
+</li>
+
+<li>
+  <label for="place"><b>Place: </b></label>
+  <input type="text" id="place" name="place"><br><br>
+</li>
+
+<li>
+  <label for="cause"><b>Select purpose:</b></label>
+  <select id="cause" name="cause">
+    <option value="emergency">Emergency</option>
+    <option value="online">Online Consultation</option>
+    <option value="online+visit">Online Consultation and Visit</option>
+  </select><br><br> 
+</li>
+
+<li>
+  <label for="days"><b>Choose a day of the week for consultation:</b></label>
+  <select id="days" name="days">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+  </select><br><br>
+</li>
+
+<li>
+  <label for="department"><b>Choose department of consultation:</b></label>
+  <select id="department" name="department">
+    <option value="covid">COVID-19 Speciality</option>
+    <option value="general">General Physician</option>
+    <option value="pediatrics">Pediatrician</option>
+  </select><br><br> 
+</li>
+
+
+
+  <input type="submit" value="Submit"><br><br>
+</form>
+
+
+</body>
+</html>

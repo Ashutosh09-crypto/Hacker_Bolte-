@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="Physician Login">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<body style="background-color:#A0FF93">
+
+<h1><center><b>
+  COVID-19 Related
+</b></center></h1>
+
+<h2 style="color:red;"><b><u>
+  Post-COVID Care
+</u></b></h2>
+<br>
+
+<img src="{{url_for('static', filename='COVID2.jpeg')}}" style="width:400px;height:400px;" align="right">
+
+<p style="font-size:18;line-height: 1.6;">
+
+The coronavirus is a nasty microbe that can do a lot of damage to your body. If your infection was moderate to severe, it is possible that the virus did some amount of damage to your respiratory system. The body becomes weak after having battled the dangerous virus for so many days.<br><br>
+That is why, even if your body has killed off all the viruses, you still need to shower yourself with a lot of love and care. This will ensure that you are completely healed and if there is any requirement for additional healthcare checks, you will be able to take the right action at the right time. <br><br><br>
+
+<b style="font-size:20">Take rest</b><br>
+<p style="font-size:18;line-height: 1.6;">
+If possible give yourself a week of complete rest after recovery. A well-rested body can focus on healing. Get enough sleep because when you sleep, your body speeds up the recovery procedure. Do not resume your old lifestyle right away. Too much work, stress and anxiety will make you ill.
+</p><br><br>
+
+<b style="font-size:20">Have a nutritious diet</b><br>
+<p style="font-size:18;line-height: 1.6;">
+Food eases the path to recovery. The right kind of food will help you gain your strength back in days. Make sure your diet includes plenty of proteins such as lentil soup, legumes, seeds, nuts,  boiled eggs, and chicken stew. Proteins repair the body. Eat small portions for easy digestion. Don’t forget to eat at least 1 fruit a day. Drink plenty of water to stay hydrated.
+</p><br><br>
+
+<b style="font-size:20">Exercise a little every day</b><br>
+<p style="font-size:18;line-height: 1.6;">
+Exercising may sound unappealing, but it is essential for a speedy recovery. Working out improves blood and oxygen circulation. It helps to detoxify your body. It can also help your brain produce more happiness hormones which will lift your spirits – something that is greatly needed after you’ve contracted COVID. Only exercise as much as you can. Do your favourite kinds of exercise and don’t push yourself too much. 10 minutes a day will suffice.
+</p><br><br>
+
+
+<b style="font-size:20">Check your blood oxygen level</b><br>
+<p style="font-size:18;line-height: 1.6;">
+Continue to monitor your blood oxygen saturation level with your oximeter. Even if you have recovered from COVID, there could be lung damage that you don’t know of. If so, your oxygen level will fluctuate and dip below 90. You will need to visit the doctor.
+</p><br><br>
+
+
+<p style="color:red;text-align:left;font-size:30;"><a href="/related4">Procedures to follow for COVID-19 positive patients</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="Physician Login">Physician Login">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<body style="background-color:#A0FF93">
+<h1><center><b>
+  COVID-19 Related
+</b></center></h1>
+
+<h2 style="color:red;"><b><u>
+  SYMPTOMS
+</u></b></h2>
+<br>
+<p style="font-size:18;line-height: 1.6;">
+Not everyone with a SARS-CoV-2 infection will feel unwell. It’s possible to have the virus and not develop symptoms. When symptoms are present, they’re typically mild and develop slowly.<br><br><br>
+
+<img src="{{url_for('static', filename='COVID1.jpeg')}}" style="width:400px;height:400px;" align="right">
+
+The most common symptoms are:<br>
+<ul style="font-size:18;">
+  <li>A gradually worsening fever</li>
+  <li>A gradually worsening cough</li>
+  <li>Fatigue</li>
+  <li>Shortness of breath</li>
+</ul>
+
+<br><br>
+<p style="font-size:18;line-height: 1.6;">Some people with COVID-19 may sometimes experience additional symptoms, such as:<br></p>
+<ul style="font-size:18;line-height: 1.6;">
+  <li>Runny or stuffy nose</li>
+  <li>Sore throat</li>
+  <li>Headache</li>
+  <li>Muscle aches and pains</li>
+  <li>Diarrhea, vomiting, and other gastrointestinal symptoms</li>
+  <li>Chills, along with repeated shaking</li>
+  <li>Loss of taste/Loss of smell</li>
+  <li>Discoloration of fingers or toes</li>
+  <li>Pink eye</li>
+</ul>
+<br><br><br>
+<p style="font-size:18;line-height: 1.6;">Symptoms that should prompt an immediate visit to the emergency room (ER) include:<br></p>
+<ul style="font-size:18;line-height: 1.6;">
+  <li>Difficulty breathing</li>
+  <li>Persistent chest pain or pressure in the chest</li>
+  <li>Confusion</li>
+  <li>Difficulty waking up or staying awake</li>
+  <li>Cyanosis, which causes blue lips or a blue face</li>
+</ul>
+<br><br>
+<p style="font-size:20;color:blue">How do COVID-19 symptoms differ from cold symptoms?<br><br></p>
+<p style="font-size:18;line-height: 1.6;">Coronaviruses are actually one of the many types of viruses that can cause the common cold.<br><br>
+Some symptoms of the common cold are:<br></p>
+<ul style="font-size:18;line-height: 1.6;">
+  <li>Runny or stuffy nose</li>
+  <li>Soar throat</li>
+  <li>Cough</li>
+  <li>Body ache</li>
+  <li>Headaches</li>
+</ul>
+<br><br>
+<p style="font-size:18;line-height: 1.6;">Consider your symptoms. A sore throat and runny nose are typically the first signs of a cold. These symptoms are less common with COVID-19.<br>
+Additionally, fever isn’t as common with a cold.</p>
+<br><br><br>
+
+
+<p style="color:red;text-align:left;font-size:30;"><a href="/related1">COVID-19 Precautions</a></p>
+
+<p style="color:red;text-align:right;font-size:30;">
+<a href="/related3">What should you do if you think you have symptoms of COVID-19?</a></p>
+
+
+</p>
+</body>
+</html>

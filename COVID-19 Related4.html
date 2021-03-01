@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+</head>
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/related1">COVID-19 Related</a>
+  <div class="dropdown">
+    <button class="dropbtn">Consultations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/patient">Patient Login</a>
+      <a href="Physician Login">Physician Login</a>
+    </div>
+  </div> 
+  <a href="/Hospital">Search Hospitals Near Me</a>
+</div>
+
+<body style="background-color:#A0FF93">
+<h1><center><b>
+  COVID-19 Related
+</b></center></h1>
+
+
+<h2 style="color:red;"><b><u>
+  Procedures to follow for COVID-19 positive patients
+</u></b></h2>
+
+<p style="font-size:20;color:blue">After exposure to someone who has COVID-19, do the following:<br><br></p>
+<p style="font-size:18;line-height: 1.6;">
+
+<ul style="font-size:18;line-height: 1.6;">
+  <li>Call your health care provider or COVID-19 hotline to find out where and when to get a test.</li><br>
+
+  <img src="{{url_for('static', filename='COVID5.jpeg')}}" style="width:400px;height:400px;" align="right">
+
+  <li>Cooperate with contact-tracing procedures to stop the spread of the virus.</li><br>
+  <li>If testing is not available, stay home and away from others for 14 days.</li><br>
+  <li>While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.</li><br>
+  <li>Keep at least a 1-metre distance from others, even from your family members.</li><br>
+  <li>Wear a medical mask to protect others, including if/when you need to seek medical care.</li><br>
+  <li>Clean your hands frequently.</li><br>
+  <li>Keep the room well-ventilated.</li><br>
+  <li>Monitor yourself for any symptoms for 14 days.</li><br>
+  <li>Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.</li><br>
+</ul>
+<br><br>
+</p>
+
+
+
+<p style="color:red;text-align:left;font-size:30;"><a href="/related3">What should you do if you think you have symptoms of COVID-19?</a></p>
+
+<p style="color:red;text-align:right;font-size:30;"><a href="/related5">Post-COVID Care</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</body>
+</html>
