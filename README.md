@@ -17,6 +17,6 @@ Few codes and pages are uncomplete due to hectic schedule.
 That's all.
 Hacker_Bolte
 
-Front_End Developer - G.K.V Snighda
+Front_End Developer - G.K.V Snigdha
 Database_Handler and Pawwri_Girl - Khushi Baghel
 Back_End Developer - Ashutosh Purohit
